@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Добавить заявку</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/add-event.css">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <p class="navbar-text page-title">Добавление мероприятия</p>
+      <a href="cabinet.html" type="button" class="btn btn-default navbar-btn cancel-btn">Отмена</a>
+    </div>
+  </nav>
+
+  <form id="add-event-form" method="POST" class="panel panel-default">
+    <div class="panel-body">
+      <span>Категория: </span>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          <span class="value" data-name="value">Выбрать</span>
+          <span class="caret"></span>
+        </button>
+
+        <div class="dropdown-menu">
+          <div class="radio">
+            <label><input type="radio" name="value">Разработка сайтов</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="value">Мобильная разработка</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="value">Машинное обучение</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="value">Трюки со спиннерами</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="value">Игровая разработка</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="value">Концепт-арт</label>
+          </div>
+        </div>
+      </div>
+
+      <input type="text" class="form-control" name="last-name" placeholder="Заголовок">
+      <span>Преподаватель: </span>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          <span class="value" data-name="teacher">Выбрать</span>
+          <span class="caret"></span>
+        </button>
+
+        <div class="dropdown-menu">
+          <div class="dropdown-body">
+            <div class="radio">
+              <label><input type="radio" name="teacher">Антон Волков</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="teacher">Алексей Лещук</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="teacher">Дарья Сердюк</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="teacher">Александр Хорошавин</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="teacher">Кирилл Медведев</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="teacher">Даниил Иванов</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="teacher">Роман Рагозин</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="teacher">Глеб Свечников</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="teacher">Денис Петров</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="teacher">Марьяна Деменьтева</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <span>Когда позвонить: </span>
+      <input type="date" name="when-to-call">
+      <br><br>
+      <input type="submit" class="btn btn-success add-event-btn" value="Готово">
+    </div>
+  </form>
+  <script src="../../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../js/radio-update.js"></script>
+</body>
+</html>
