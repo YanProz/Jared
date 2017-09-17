@@ -13,11 +13,11 @@
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <p class="navbar-text page-title">Добавление мероприятия</p>
-      <a href="cabinet.html" type="button" class="btn btn-default navbar-btn cancel-btn">Отмена</a>
+      <a href="/cabinet" type="button" class="btn btn-default navbar-btn cancel-btn">Отмена</a>
     </div>
   </nav>
 
-  <form id="add-event-form" method="POST" class="panel panel-default">
+  <form id="add-event-form" method="POST" class="panel panel-default" action="/add-event">
     <div class="panel-body">
       <span>Категория: </span>
       <div class="dropdown">
@@ -28,27 +28,27 @@
 
         <div class="dropdown-menu">
           <div class="radio">
-            <label><input type="radio" name="value">Разработка сайтов</label>
+            <label><input type="radio" name="value" value="Разработка сайтов">Разработка сайтов</label>
           </div>
           <div class="radio">
-            <label><input type="radio" name="value">Мобильная разработка</label>
+            <label><input type="radio" name="value" value="Мобильная разработка">Мобильная разработка</label>
           </div>
           <div class="radio">
-            <label><input type="radio" name="value">Машинное обучение</label>
+            <label><input type="radio" name="value" value="Машинное обучение">Машинное обучение</label>
           </div>
           <div class="radio">
-            <label><input type="radio" name="value">Трюки со спиннерами</label>
+            <label><input type="radio" name="value" value="Трюки со спиннерами">Трюки со спиннерами</label>
           </div>
           <div class="radio">
-            <label><input type="radio" name="value">Игровая разработка</label>
+            <label><input type="radio" name="value" value="Игровая разработка">Игровая разработка</label>
           </div>
           <div class="radio">
-            <label><input type="radio" name="value">Концепт-арт</label>
+            <label><input type="radio" name="value" value="Концепт-арт">Концепт-арт</label>
           </div>
         </div>
       </div>
 
-      <input type="text" class="form-control" name="last-name" placeholder="Заголовок">
+      <input type="text" class="form-control" name="last_name" placeholder="Заголовок">
       <span>Преподаватель: </span>
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -59,41 +59,41 @@
         <div class="dropdown-menu">
           <div class="dropdown-body">
             <div class="radio">
-              <label><input type="radio" name="teacher">Антон Волков</label>
+              <label><input type="radio" name="teacher" value="Антон Волков">Антон Волков</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="teacher">Алексей Лещук</label>
+              <label><input type="radio" name="teacher" value="Алексей Лещук">Алексей Лещук</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="teacher">Дарья Сердюк</label>
+              <label><input type="radio" name="teacher" value="Дарья Сердюк">Дарья Сердюк</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="teacher">Александр Хорошавин</label>
+              <label><input type="radio" name="teacher" value="Александр Хорошавин">Александр Хорошавин</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="teacher">Кирилл Медведев</label>
+              <label><input type="radio" name="teacher" value="Кирилл Медведев">Кирилл Медведев</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="teacher">Даниил Иванов</label>
+              <label><input type="radio" name="teacher" value="Даниил Иванов">Даниил Иванов</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="teacher">Роман Рагозин</label>
+              <label><input type="radio" name="teacher" value="Роман Рагозин">Роман Рагозин</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="teacher">Глеб Свечников</label>
+              <label><input type="radio" name="teacher" value="Глеб Свечников">Глеб Свечников</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="teacher">Денис Петров</label>
+              <label><input type="radio" name="teacher" value="Денис Петров">Денис Петров</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="teacher">Марьяна Деменьтева</label>
+              <label><input type="radio" name="teacher" value="Марьяна Деменьтева">Марьяна Деменьтева</label>
             </div>
           </div>
         </div>
       </div>
       <br>
       <span>Когда позвонить: </span>
-      <input type="date" name="when-to-call">
+      <input type="date" name="when_to_call">
       <br><br>
       <input type="submit" class="btn btn-success add-event-btn" value="Готово">
     </div>
